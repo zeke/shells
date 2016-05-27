@@ -1,0 +1,39 @@
+{
+  "name": "shells",
+  "version": "1.0.0",
+  "description": "Get a list of all unix shells for which user configuration files exist. Supports bash, zsh, and fish.",
+  "main": "index.js",
+  "dependencies": {
+    "path-exists": "^3.0.0"
+  },
+  "devDependencies": {
+    "standard": "^7.1.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  },
+  "scripts": {
+    "test": "node test/index.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeke/shells.git"
+  },
+  "keywords": [
+    "shell",
+    "bash",
+    "zsh",
+    "fish",
+    "user",
+    "home",
+    "directory",
+    "rc",
+    "config",
+    "env"
+  ],
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/shells/issues"
+  },
+  "homepage": "https://github.com/zeke/shells#readme"
+}
