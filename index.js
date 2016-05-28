@@ -10,8 +10,8 @@ const files = [
   '~/.config/fish/config.fish'
 ]
 
-module.exports = function (baseDir) {
-  if (!baseDir) baseDir = os.homedir()
+module.exports = function () {
+  var baseDir = process.env.SHELLS_HOMEDIR || os.homedir()
 
   return files
     .map(file => path.resolve(file.replace('~', baseDir)))

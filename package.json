@@ -12,12 +12,9 @@
     "tape": "^4.5.1"
   },
   "scripts": {
-    "test": "node test/index.js | tap-spec"
+    "test": "node test/index.js | tap-spec && standard"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zeke/shells.git"
-  },
+  "repository": "https://github.com/zeke/shells",
   "keywords": [
     "shell",
     "bash",
